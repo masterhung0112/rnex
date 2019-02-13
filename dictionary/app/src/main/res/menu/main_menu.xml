@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Settings" android:id="@+id/action_settings"/>
+    <item android:title="Exit" android:id="@+id/action_exit"/>
+</menu>
