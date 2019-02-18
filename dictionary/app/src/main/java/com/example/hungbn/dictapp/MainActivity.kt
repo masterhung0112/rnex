@@ -1,5 +1,6 @@
 package com.example.hungbn.dictapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.SearchView
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         search = findViewById(R.id.search_view)
         search.setOnClickListener {
             search.setIconifiedByDefault(false)
+            var intent = Intent(this, WordMeaningActivity::class.java)
+            startActivity(intent)
         }
 
     }
