@@ -31,7 +31,11 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
 
         when (item?.itemId) {
-            R.id.action_settings -> return true
+            R.id.action_settings -> {
+                var intent = Intent(this, SettingsActivity::class.java)
+                startActivity(intent)
+                return true
+            }
             R.id.action_exit -> {
                 System.exit(0)
                 return true
